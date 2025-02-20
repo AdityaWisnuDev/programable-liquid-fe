@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/header/header'
 import Trading from './components/trading/trading'
-import Create from './components/create/create'
+import CreateForm from './components/create/create'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={ <Trading/> }/> {/** sementara */}
           <Route path='/trading' element={ <Trading/> }/>
-          <Route path='/create' element={ <Create/> } />
+          <Route path='/create' element={ <CreateForm/> } />
         </Routes>
       </Router>
     </>
